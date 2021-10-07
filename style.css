@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap');
+
+body {
+    background-color: #10061c;
+    color:blanchedalmond;
+}
+
+/* Every Challenge.... Contact is in #header  */
+
+#header {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    margin-top: 8%;
+    margin-bottom: 10%;
+}
+
+.dots {
+    list-style: none;
+}
