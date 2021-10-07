@@ -5,7 +5,7 @@ body {
     color:blanchedalmond;
 }
 
-/* Every Challenge.... Contact is in #header  */
+/* Every Challenge.... Contact is in #header. This is how I got text centered */
 
 #header {
     text-align: center;
@@ -15,6 +15,101 @@ body {
     margin-bottom: 10%;
 }
 
+/*  Font for both Challenge & Renn. Styling ONLY for Renn line  */
+.inner {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: .04em;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+/* Styling for ...Challenge is creative... */
+.inner h1 {
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* The navigation bar was in an ul & needed this code. The Send, Reset & github also needed this. */
 .dots {
     list-style: none;
 }
+
+/* Incomplete */
+#firstparagraph {
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+
+
+/* Video graphic */
+#main {
+    position: relative;
+    /* VH (Viewport Height) determines the height of the element by setting it to a percentage of the viewport 
+    (NOTE: VW is used for width) */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    /* Same as setting center to justify-content & align-items. */
+    /* or place-items: center;  */
+
+    /* So the text does NOT go right up against the edge on smaller screen sizes. */
+    padding: 0 20px;
+}
+
+#video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background-image: url("cover.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+
+    /* The object-fit property determines how a video or image (AKA Img element) is resized to fit inside its container (AKA Parent Element). Setting the value to "cover" causes the video to retain its aspect ratio and fill the given dimension. */
+    object-fit: cover;
+}
+
+#cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* End Video Code */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
