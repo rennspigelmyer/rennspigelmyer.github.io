@@ -179,14 +179,10 @@ p {
 #lead {
     font-size: 175%;
     font-weight: 500;
-    padding-left: 2%;
-    padding-right: 20%;
     padding-top: 5%;
     padding-bottom: 5%;
     background-color: #362f40;
-    margin-left: 0%;
-    margin-right: 15%;
-    text-align: left;
+    text-align: center;
 }
 
 
