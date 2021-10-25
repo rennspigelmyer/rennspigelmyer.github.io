@@ -3,31 +3,157 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');/* Montserrat */
 
 body {
+    font-family: 'Montserrat', sans-serif;
+    color: antiquewhite;
+    background-color: #10061c;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.inner h1 {
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+
+#header {
+    font-weight: 100;
+    font-weight: 100;
+    margin-top: 1%;
+    margin-bottom: 10%;
+}
+
+
+/* Video graphic */
+#main {
+    position: relative;
+    /* VH (Viewport Height) determines the height of the element by setting it to a percentage of the viewport 
+    (NOTE: VW is used for width) */
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Same as setting center to justify-content & align-items. */
+    /* or place-items: center;  */
+    /* So the text does NOT go right up against the edge on smaller screen sizes. */
+     padding: 0 20px;
+}
+
+#video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("cover.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    margin-bottom: 100%; 
+    /* The object-fit property determines how a video or image (AKA Img element) is resized to fit inside its container (AKA Parent Element). Setting the value to "cover" causes the video to retain its aspect ratio and fill the given dimension. */
+    object-fit: cover;
+}
+
+#cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background-color: rgba(0, 0, 0, .7);
+}
+/* End Video Code */
+
+
+
+/* Icons Code  */
+
+.fa-html5, .fa-css3-alt, .fa-bootstrap, .fa-sass, .fa-js-square, .fa-react, .fa-chrome, .fa-git, .fa-npm, .fa-node {
+    /*background-color: #9d3cbd; */
+    padding: 20px;
+    margin: 15px;
+    font-size: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body {
     background-color: #10061c;
     color:blanchedalmond;
     text-align: center;
 }
 
 /* Every Challenge.... Contact is in #header. This is how I got text centered */
-#header {
+/* #header {
     text-align: center;
     font-family: 'Oswald', sans-serif;
     font-weight: 100;
     margin-top: 1%;
     margin-bottom: 10%;
     /* background-color: hotpink; */
-}
+
 
 
 /*  Font for both Challenge & Renn. Styling ONLY for Renn line  */
-.inner {
+/* .inner {
     font-family: 'Oswald', sans-serif;
     letter-spacing: .04em;
     font-weight: 200;
     text-transform: uppercase;
 }
 /* Styling for ...Challenge is creative... */
-.inner h1 {
+/* .inner h1 {
     letter-spacing: .2em;
     text-transform: uppercase;
     font-weight: 500;
@@ -44,23 +170,23 @@ h2 {
 
 /* The navigation bar was in an ul & needed this code. The Send, Reset & github also needed this. */
 /* Will need a media query for nav bar */
-.dots {
+/* .dots {
     list-style: none;
     text-decoration-line: none;
     /* put nav bar in a horizontal line. will need separate ids. */
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     /* font-size: 20px ; */
-    align-self: center;
+    /* align-self: center;
     /* lex-direction: row-reverse; */
-    justify-content: center;   
+    /* justify-content: center;   
     font-family: 'Montserrat', sans-serif;
     font-size: 230%;
     margin: 10px;
     /* border: 2px solid rgb(7, 56, 79); */
     /* background-color: black; */
-    padding-left: 30px;
+    /* padding-left: 30px;
     padding-right: 30px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -71,22 +197,22 @@ h2 {
     color: white;
     /* background-color: #9d3cbd; */
     /* Maybe try adding the video to nav bar */
-}
 
-nav {
+
+/* nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     /* font-size: 20px ; */
-    align-self: center;
+    /* align-self: center;
     /* font-size: 20px; */
-    align-self: center;
+    /* align-self: center;
     /* lex-direction: row-reverse; */
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif;
     font-size: 230%;
     margin: 10px;
     /* border: 2px solid rgb(7, 56, 79); */
-    background-color: #10061c;
+    /* background-color: #10061c;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 5px;
@@ -108,19 +234,19 @@ nav {
 } 
 
 /* Video graphic */
-#main {
+/* #main {
     position: relative;
     /* VH (Viewport Height) determines the height of the element by setting it to a percentage of the viewport 
     (NOTE: VW is used for width) */
-    height: 40vh;
+    /* height: 40vh;
     display: flex;
     /* flex-direction: column; */
-    justify-content: center;
+    /* justify-content: center;
     align-items: center;
     /* Same as setting center to justify-content & align-items. */
     /* or place-items: center;  */
     /* So the text does NOT go right up against the edge on smaller screen sizes. */
-    padding: 0 20px;
+    /* padding: 0 20px;
 }
 
 #video-container {
@@ -151,7 +277,7 @@ video {
     height: 90%;
     margin-bottom: 100%; 
     /* The object-fit property determines how a video or image (AKA Img element) is resized to fit inside its container (AKA Parent Element). Setting the value to "cover" causes the video to retain its aspect ratio and fill the given dimension. */
-    object-fit: cover;
+    /* object-fit: cover;
 }
 
 #cover {
@@ -166,7 +292,7 @@ video {
 
 /* start paragraphs */
 /* Paragraphs */
-p {
+/* p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     letter-spacing: .05em;
@@ -207,7 +333,7 @@ p {
 
 
 /* Contact Form */
-#contact {
+/* #contact {
     padding: 10%;
     font-size: 200%;
 
@@ -234,7 +360,7 @@ p {
 
 
 /* Footer  */
-#footer {
+/* #footer {
     text-align: center;
     text-decoration: none;
     padding-bottom: 20%;
