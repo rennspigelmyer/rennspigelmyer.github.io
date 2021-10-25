@@ -29,6 +29,7 @@ h1, h2 {
 
 
 /* Video graphic */
+/* Make videos play slower */
 #main {
     position: relative;
     /* VH (Viewport Height) determines the height of the element by setting it to a percentage of the viewport 
@@ -94,18 +95,53 @@ video {
     font-size: 50px;
 }
 
+/* Text under icons Code */
+#knowledge {
+    font-style: italic;
+    font-size: 90%;
+    margin-bottom: 10%;
+}
 
 
 
 
 
+/*  Font Awesome Icon Links */
+
+.contactlinks {
+    color: white;
+    list-style: none;
+    font-style: none;
+    font-size: 200%;
+    text-align: center;
+    text-decoration: none;
+}
 
 
 
+a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+a :hover {
+    color: #9d3cbd;
+    font-size: 150%;
+}
 
 
 
+/*  FOOTER */
 
+.button {
+    background-color: #9d3cbd;
+    padding: 2%; 
+}
+
+#topmargin {
+    margin: 10%;
+}
 
 
 
