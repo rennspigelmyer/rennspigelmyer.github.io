@@ -14,9 +14,15 @@ h1, h2 {
 }
 
 .inner h1 {
+    margin-top: 3%;
     letter-spacing: .2em;
     text-transform: uppercase;
     font-weight: 500;
+}
+
+.inner p {
+    margin-bottom: 4%;
+    
 }
 
 
@@ -29,7 +35,7 @@ h1, h2 {
 
 
 /* Video graphic */
-/* Make videos play slower */
+/* look into how to Make videos play slower */
 #main {
     position: relative;
     /* VH (Viewport Height) determines the height of the element by setting it to a percentage of the viewport 
